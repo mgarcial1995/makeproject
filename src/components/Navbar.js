@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
-{/* <Link to={route.url}>{route.name}</Link> */}
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookSquare } from '@fortawesome/free-brands-svg-icons'
+
 const Navbar = (props) => {
     const {routes} = props
     console.log(routes)
 
     return (
       <div className="navbar">
-        <img className="logo" src="http://www.emilyridge.ie/wp-content/themes/skeleostrnge/lib/img/logo-web-developer-emily-ridge.png" />
+        <img className="logo" src="http://www.emilyridge.ie/wp-content/themes/skeleostrnge/lib/img/logo-web-developer-emily-ridge.png" alt="Logo" />
         <ul className="navbar_list">
-            {/* <li><Link to={"/"}>Home</Link></li>
-            <li><Link to={"/resources"}>Resources</Link></li> */}
             {
                 routes.map((el,index)=>{
                     return <li key={index}>

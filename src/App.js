@@ -5,6 +5,7 @@ import Home from "./Home";
 import Resources from "./Resources";
 import Services from "./Services";
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 function App() {
   const routes = [
     { name: 'Home', url: '/' },
@@ -19,6 +20,7 @@ function App() {
         <Route path='/resources' element={<Resources />} />
         <Route path='/services' element={<Services />} />
       </Routes>
+      <Footer routes={routes} />
     </div>
   );
 }
