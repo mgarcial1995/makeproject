@@ -1,3 +1,4 @@
+import './styles.sass'
 const Home = () => {
   return (
     <div>
